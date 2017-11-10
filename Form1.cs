@@ -34,7 +34,7 @@ namespace Szymzilla
             toolStripStatusLabel1.Text = "Ładowanie";
             Idz.Enabled = false;
             textBox1.Enabled = false;
-            odswiez.Enabled = false;
+            odswiez.Enabled = true;
             webBrowser1.Navigate(textBox1.Text);
         }
 
@@ -72,7 +72,7 @@ namespace Szymzilla
             if (e.CurrentProgress > 0 && e.MaximumProgress > 0)
             {
                 toolStripProgressBar1.ProgressBar.Value = (int)(e.CurrentProgress * 100 / e.MaximumProgress);
-                toolStripStatusLabel2.Text = toolStripProgressBar1.ProgressBar.Value.ToString()+"%";
+                PostepTekst.Text = toolStripProgressBar1.ProgressBar.Value.ToString()+"%";
             }
         }
 
