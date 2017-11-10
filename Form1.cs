@@ -27,7 +27,7 @@ namespace Szymzilla
             MessageBox.Show("Projekt zrealizowany przez Szymona Kiełczawę");
         }
 
-        // Funkcja nawigująca do strony
+        // Funkcja nawigująca do strony oraz sprawdzająca czy użytkownik nie chce wyszukać czegoś w google
 
         private void IdzDoStrony()
         {
@@ -35,7 +35,14 @@ namespace Szymzilla
             Idz.Enabled = false;
             textBox1.Enabled = false;
             odswiez.Enabled = true;
-            webBrowser1.Navigate(textBox1.Text);
+            if (textBox1.Text.Contains(".") && !textBox1.Text.Contains("\""))
+            {
+                webBrowser1.Navigate(textBox1.Text);
+            }
+            else
+            {
+                webBrowser1.Navigate("https://www.google.pl/search?q=" + textBox1.Text);
+            }
         }
 
         // Przycisk nawigujący do porządanej strony internetowej
@@ -56,7 +63,7 @@ namespace Szymzilla
                 IdzDoStrony();
             }
         }
-
+        
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             toolStripStatusLabel1.Text = "Gotowe";
@@ -109,6 +116,11 @@ namespace Szymzilla
         private void odswierz_Click(object sender, EventArgs e)
         {
             webBrowser1.Refresh();
+        }
+
+        private void Home_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("http://www.google.pl");
         }
     }
 }

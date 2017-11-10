@@ -45,6 +45,7 @@
             this.Stop = new System.Windows.Forms.Button();
             this.odswiez = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.Home = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -95,9 +96,9 @@
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(180, 31);
+            this.textBox1.Location = new System.Drawing.Point(268, 31);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(627, 22);
+            this.textBox1.Size = new System.Drawing.Size(539, 22);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "http://";
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
@@ -197,12 +198,24 @@
             this.webBrowser1.Size = new System.Drawing.Size(1038, 386);
             this.webBrowser1.TabIndex = 9;
             // 
+            // Home
+            // 
+            this.Home.BackColor = System.Drawing.Color.Transparent;
+            this.Home.Location = new System.Drawing.Point(181, 30);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(81, 23);
+            this.Home.TabIndex = 10;
+            this.Home.Text = "Startowa";
+            this.Home.UseVisualStyleBackColor = false;
+            this.Home.Click += new System.EventHandler(this.Home_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1062, 473);
+            this.Controls.Add(this.Home);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.odswiez);
             this.Controls.Add(this.Stop);
@@ -243,6 +256,7 @@
         private System.Windows.Forms.ToolStripStatusLabel PostepTekst;
         private System.Windows.Forms.Button odswiez;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Button Home;
     }
 }
 
