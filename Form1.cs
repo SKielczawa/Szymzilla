@@ -49,6 +49,7 @@ namespace Szymzilla
 
         private void Idz_Click(object sender, EventArgs e)
         {
+            WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
             IdzDoStrony();
         } 
 
@@ -60,12 +61,14 @@ namespace Szymzilla
         {
             if(e.KeyChar == (char)ConsoleKey.Enter)
             {
+                WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
                 IdzDoStrony();
             }
         }
         
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
+            zakladki.SelectedTab.Text = webBrowser1.DocumentTitle;
             toolStripStatusLabel1.Text = "Gotowe";
             Idz.Enabled = true;
             textBox1.Enabled = true;
@@ -85,19 +88,24 @@ namespace Szymzilla
 
         private void Wstecz_Click(object sender, EventArgs e)
         {
-            webBrowser1.GoBack();
+            WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
+            if (web.CanGoBack)
+                web.GoBack();
         }
 
         private void Naprzod_Click(object sender, EventArgs e)
         {
-            webBrowser1.GoForward();
+            WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
+            if (web.CanGoForward)
+                web.GoForward();
         }
 
         // Przycisk stopujący wyszukiwanie
 
         private void Stop_Click(object sender, EventArgs e)
         {
-            webBrowser1.Stop();
+            WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
+            web.Stop();
             toolStripStatusLabel1.Text = "Stop" ;
             Idz.Enabled = true;
             textBox1.Enabled = true;
@@ -108,19 +116,43 @@ namespace Szymzilla
         
         private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
         {
-            textBox1.Text = webBrowser1.Url.ToString();
+            WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
+            textBox1.Text = web.Url.ToString();
         }
 
         // Przycisk odświeżający
 
         private void odswierz_Click(object sender, EventArgs e)
         {
-            webBrowser1.Refresh();
+            WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
+            web.Refresh();
         }
 
         private void Home_Click(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("http://www.google.pl");
+            WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
+            web.Navigate("http://www.google.pl");
+        }
+
+
+        WebBrowser nowaStrona = null;
+
+        private void dodaj_karte_Click(object sender, EventArgs e)
+        {
+            TabPage karta = new TabPage();
+            karta.Text = "Nowa karta";
+            zakladki.Controls.Add(karta);
+            zakladki.SelectTab(zakladki.TabCount - 1);
+            nowaStrona = new WebBrowser() { ScriptErrorsSuppressed = true };
+            nowaStrona.Parent = karta;
+            nowaStrona.Dock = DockStyle.Fill;
+            nowaStrona.Navigate("http://www.google.pl");
+            nowaStrona.DocumentCompleted += NowaStrona_DocumentCompleted; ;
+        }
+
+        private void NowaStrona_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            zakladki.SelectedTab.Text = nowaStrona.DocumentTitle;
         }
     }
 }
