@@ -101,7 +101,7 @@
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(267, 32);
+            this.textBox1.Location = new System.Drawing.Point(267, 31);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(509, 22);
             this.textBox1.TabIndex = 1;
@@ -219,10 +219,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.zakladki.Controls.Add(this.tabPage1);
-            this.zakladki.Location = new System.Drawing.Point(12, 60);
+            this.zakladki.Location = new System.Drawing.Point(13, 61);
             this.zakladki.Name = "zakladki";
             this.zakladki.SelectedIndex = 0;
-            this.zakladki.Size = new System.Drawing.Size(1038, 385);
+            this.zakladki.Size = new System.Drawing.Size(1037, 384);
             this.zakladki.TabIndex = 12;
             // 
             // tabPage1
@@ -231,7 +231,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1030, 356);
+            this.tabPage1.Size = new System.Drawing.Size(1029, 355);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -242,7 +242,8 @@
             this.webBrowser1.Location = new System.Drawing.Point(3, 3);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(1024, 350);
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            this.webBrowser1.Size = new System.Drawing.Size(1023, 349);
             this.webBrowser1.TabIndex = 0;
             // 
             // Form1

@@ -27,22 +27,14 @@ namespace Szymzilla
             MessageBox.Show("Projekt zrealizowany przez Szymona Kiełczawę");
         }
 
-        // Funkcja nawigująca do strony oraz sprawdzająca czy użytkownik nie chce wyszukać czegoś w google
+        // Funkcja nawigująca do strony
 
         private void IdzDoStrony()
         {
-            toolStripStatusLabel1.Text = "Ładowanie";
             Idz.Enabled = false;
             textBox1.Enabled = false;
             odswiez.Enabled = true;
-            if (textBox1.Text.Contains(".") && !textBox1.Text.Contains("\""))
-            {
-                webBrowser1.Navigate(textBox1.Text);
-            }
-            else
-            {
-                webBrowser1.Navigate("https://www.google.pl/search?q=" + textBox1.Text);
-            }
+            webBrowser1.Navigate(textBox1.Text);
         }
 
         // Przycisk nawigujący do porządanej strony internetowej
@@ -65,7 +57,7 @@ namespace Szymzilla
                 IdzDoStrony();
             }
         }
-        
+
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             zakladki.SelectedTab.Text = webBrowser1.DocumentTitle;
@@ -83,6 +75,7 @@ namespace Szymzilla
             {
                 toolStripProgressBar1.ProgressBar.Value = (int)(e.CurrentProgress * 100 / e.MaximumProgress);
                 PostepTekst.Text = toolStripProgressBar1.ProgressBar.Value.ToString()+"%";
+                toolStripStatusLabel1.Text = "Ładowanie";
             }
         }
 
