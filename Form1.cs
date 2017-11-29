@@ -31,10 +31,17 @@ namespace Szymzilla
 
         private void IdzDoStrony()
         {
-            Idz.Enabled = false;
-            textBox1.Enabled = false;
+            Idz.Enabled = true;
+            textBox1.Enabled = true;
             odswiez.Enabled = true;
-            webBrowser1.Navigate(textBox1.Text);
+            if (textBox1.Text.Contains(".") && !textBox1.Text.Contains("\""))
+            {
+                webBrowser1.Navigate(textBox1.Text);
+            }
+            else
+            {
+                webBrowser1.Navigate("https://www.google.pl/search?q=" + textBox1.Text);
+            }
         }
 
         // Przycisk nawigujący do porządanej strony internetowej
@@ -60,7 +67,7 @@ namespace Szymzilla
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-            zakladki.SelectedTab.Text = webBrowser1.DocumentTitle;
+         //   zakladki.SelectedTab.Text = webBrowser1.DocumentTitle;
             toolStripStatusLabel1.Text = "Gotowe";
             Idz.Enabled = true;
             textBox1.Enabled = true;
