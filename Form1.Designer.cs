@@ -49,6 +49,7 @@
             this.zakladki = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.usun_karte = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.zakladki.SuspendLayout();
@@ -103,7 +104,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(267, 31);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(509, 22);
+            this.textBox1.Size = new System.Drawing.Size(472, 22);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "http://";
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
@@ -111,7 +112,7 @@
             // Idz
             // 
             this.Idz.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Idz.Location = new System.Drawing.Point(944, 30);
+            this.Idz.Location = new System.Drawing.Point(907, 30);
             this.Idz.Name = "Idz";
             this.Idz.Size = new System.Drawing.Size(75, 23);
             this.Idz.TabIndex = 2;
@@ -172,7 +173,7 @@
             // Stop
             // 
             this.Stop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Stop.Location = new System.Drawing.Point(782, 30);
+            this.Stop.Location = new System.Drawing.Point(745, 31);
             this.Stop.Name = "Stop";
             this.Stop.Size = new System.Drawing.Size(75, 23);
             this.Stop.TabIndex = 7;
@@ -183,7 +184,7 @@
             // odswiez
             // 
             this.odswiez.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.odswiez.Location = new System.Drawing.Point(863, 30);
+            this.odswiez.Location = new System.Drawing.Point(826, 30);
             this.odswiez.Name = "odswiez";
             this.odswiez.Size = new System.Drawing.Size(75, 23);
             this.odswiez.TabIndex = 8;
@@ -205,7 +206,7 @@
             // dodaj_karte
             // 
             this.dodaj_karte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dodaj_karte.Location = new System.Drawing.Point(1025, 30);
+            this.dodaj_karte.Location = new System.Drawing.Point(988, 30);
             this.dodaj_karte.Name = "dodaj_karte";
             this.dodaj_karte.Size = new System.Drawing.Size(25, 23);
             this.dodaj_karte.TabIndex = 11;
@@ -245,6 +246,18 @@
             this.webBrowser1.ScriptErrorsSuppressed = true;
             this.webBrowser1.Size = new System.Drawing.Size(1023, 349);
             this.webBrowser1.TabIndex = 0;
+            this.webBrowser1.Url = new System.Uri("http://www.google.pl", System.UriKind.Absolute);
+            // 
+            // usun_karte
+            // 
+            this.usun_karte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.usun_karte.Location = new System.Drawing.Point(1019, 30);
+            this.usun_karte.Name = "usun_karte";
+            this.usun_karte.Size = new System.Drawing.Size(23, 23);
+            this.usun_karte.TabIndex = 13;
+            this.usun_karte.Text = "-";
+            this.usun_karte.UseVisualStyleBackColor = true;
+            this.usun_karte.Click += new System.EventHandler(this.usun_karte_Click);
             // 
             // Form1
             // 
@@ -252,6 +265,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1062, 473);
+            this.Controls.Add(this.usun_karte);
             this.Controls.Add(this.zakladki);
             this.Controls.Add(this.dodaj_karte);
             this.Controls.Add(this.Home);
@@ -300,6 +314,7 @@
         private System.Windows.Forms.TabControl zakladki;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Button usun_karte;
     }
 }
 

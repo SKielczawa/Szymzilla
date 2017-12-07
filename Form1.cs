@@ -31,16 +31,17 @@ namespace Szymzilla
 
         private void IdzDoStrony()
         {
+            WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
             Idz.Enabled = true;
             textBox1.Enabled = true;
             odswiez.Enabled = true;
             if (textBox1.Text.Contains(".") && !textBox1.Text.Contains("\""))
             {
-                webBrowser1.Navigate(textBox1.Text);
+                web.Navigate(textBox1.Text);
             }
             else
             {
-                webBrowser1.Navigate("https://www.google.pl/search?q=" + textBox1.Text);
+                web.Navigate("https://www.google.pl/search?q=" + textBox1.Text);
             }
         }
 
@@ -48,7 +49,6 @@ namespace Szymzilla
 
         private void Idz_Click(object sender, EventArgs e)
         {
-            WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
             IdzDoStrony();
         } 
 
@@ -60,14 +60,12 @@ namespace Szymzilla
         {
             if(e.KeyChar == (char)ConsoleKey.Enter)
             {
-                WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
                 IdzDoStrony();
             }
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-         //   zakladki.SelectedTab.Text = webBrowser1.DocumentTitle;
             toolStripStatusLabel1.Text = "Gotowe";
             Idz.Enabled = true;
             textBox1.Enabled = true;
@@ -134,13 +132,13 @@ namespace Szymzilla
             web.Navigate("http://www.google.pl");
         }
 
+        //Dodawanie nowej karty
 
         WebBrowser nowaStrona = null;
 
         private void dodaj_karte_Click(object sender, EventArgs e)
         {
-            TabPage karta = new TabPage();
-            karta.Text = "Nowa karta";
+            TabPage karta = new TabPage();        
             zakladki.Controls.Add(karta);
             zakladki.SelectTab(zakladki.TabCount - 1);
             nowaStrona = new WebBrowser() { ScriptErrorsSuppressed = true };
@@ -150,9 +148,16 @@ namespace Szymzilla
             nowaStrona.DocumentCompleted += NowaStrona_DocumentCompleted; ;
         }
 
+        // Funkcja, ktróra wyświetla nazwę strony jako nazwę zakładki
         private void NowaStrona_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             zakladki.SelectedTab.Text = nowaStrona.DocumentTitle;
+        }
+        
+        // Funkcja, która usuwa kartę
+        private void usun_karte_Click(object sender, EventArgs e)
+        {
+            zakladki.SelectedTab.Dispose();
         }
     }
 }
