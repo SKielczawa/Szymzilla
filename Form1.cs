@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace Szymzilla
 {
@@ -158,6 +160,23 @@ namespace Szymzilla
         private void usun_karte_Click(object sender, EventArgs e)
         {
             zakladki.SelectedTab.Dispose();
+        }
+
+        public class Strona
+        {
+            public string nazwa;
+            public string adres;
+        }
+
+        private void ulub_Click(object sender, EventArgs e)
+        {
+            Strona ulubiona = new Strona();
+            WebBrowser web = zakladki.SelectedTab.Controls[0] as WebBrowser;
+            ulubiona.adres = web.Url.ToString();
+            ulubiona.nazwa = nazwa_ulub.Text;
+            XmlSerializer xml = new XmlSerializer(typeof(Strona));
+            using (Stream s = File.Create("Ulubione.xml"))
+                xml.Serialize(s, ulubiona);
         }
     }
 }

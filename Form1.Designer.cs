@@ -50,6 +50,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.usun_karte = new System.Windows.Forms.Button();
+            this.ulub = new System.Windows.Forms.Button();
+            this.nazwa_ulub = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.zakladki.SuspendLayout();
@@ -102,9 +104,9 @@
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(267, 31);
+            this.textBox1.Location = new System.Drawing.Point(183, 31);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(472, 22);
+            this.textBox1.Size = new System.Drawing.Size(556, 22);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "http://";
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
@@ -116,7 +118,7 @@
             this.Idz.Name = "Idz";
             this.Idz.Size = new System.Drawing.Size(75, 23);
             this.Idz.TabIndex = 2;
-            this.Idz.Text = "Idź";
+            this.Idz.Text = "➔";
             this.Idz.UseVisualStyleBackColor = true;
             this.Idz.Click += new System.EventHandler(this.Idz_Click);
             // 
@@ -152,21 +154,21 @@
             // 
             // Wstecz
             // 
-            this.Wstecz.Location = new System.Drawing.Point(12, 31);
+            this.Wstecz.Location = new System.Drawing.Point(12, 32);
             this.Wstecz.Name = "Wstecz";
-            this.Wstecz.Size = new System.Drawing.Size(81, 23);
+            this.Wstecz.Size = new System.Drawing.Size(55, 23);
             this.Wstecz.TabIndex = 5;
-            this.Wstecz.Text = "Wstecz";
+            this.Wstecz.Text = "↶";
             this.Wstecz.UseVisualStyleBackColor = true;
             this.Wstecz.Click += new System.EventHandler(this.Wstecz_Click);
             // 
             // Naprzod
             // 
-            this.Naprzod.Location = new System.Drawing.Point(99, 30);
+            this.Naprzod.Location = new System.Drawing.Point(73, 31);
             this.Naprzod.Name = "Naprzod";
-            this.Naprzod.Size = new System.Drawing.Size(75, 23);
+            this.Naprzod.Size = new System.Drawing.Size(54, 23);
             this.Naprzod.TabIndex = 6;
-            this.Naprzod.Text = "Naprzód";
+            this.Naprzod.Text = "↷";
             this.Naprzod.UseVisualStyleBackColor = true;
             this.Naprzod.Click += new System.EventHandler(this.Naprzod_Click);
             // 
@@ -188,18 +190,18 @@
             this.odswiez.Name = "odswiez";
             this.odswiez.Size = new System.Drawing.Size(75, 23);
             this.odswiez.TabIndex = 8;
-            this.odswiez.Text = "Odśwież";
+            this.odswiez.Text = "↻";
             this.odswiez.UseVisualStyleBackColor = true;
             this.odswiez.Click += new System.EventHandler(this.odswierz_Click);
             // 
             // Home
             // 
             this.Home.BackColor = System.Drawing.Color.Transparent;
-            this.Home.Location = new System.Drawing.Point(180, 30);
+            this.Home.Location = new System.Drawing.Point(133, 30);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(81, 23);
+            this.Home.Size = new System.Drawing.Size(44, 23);
             this.Home.TabIndex = 10;
-            this.Home.Text = "Startowa";
+            this.Home.Text = "⌂ ";
             this.Home.UseVisualStyleBackColor = false;
             this.Home.Click += new System.EventHandler(this.Home_Click);
             // 
@@ -259,12 +261,33 @@
             this.usun_karte.UseVisualStyleBackColor = true;
             this.usun_karte.Click += new System.EventHandler(this.usun_karte_Click);
             // 
+            // ulub
+            // 
+            this.ulub.Location = new System.Drawing.Point(693, 2);
+            this.ulub.Name = "ulub";
+            this.ulub.Size = new System.Drawing.Size(75, 23);
+            this.ulub.TabIndex = 14;
+            this.ulub.Text = "button1";
+            this.ulub.UseVisualStyleBackColor = true;
+            this.ulub.Click += new System.EventHandler(this.ulub_Click);
+            // 
+            // nazwa_ulub
+            // 
+            this.nazwa_ulub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nazwa_ulub.Location = new System.Drawing.Point(941, 2);
+            this.nazwa_ulub.Name = "nazwa_ulub";
+            this.nazwa_ulub.Size = new System.Drawing.Size(104, 22);
+            this.nazwa_ulub.TabIndex = 15;
+            this.nazwa_ulub.Text = "Nazwa ulubionej";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1062, 473);
+            this.Controls.Add(this.nazwa_ulub);
+            this.Controls.Add(this.ulub);
             this.Controls.Add(this.usun_karte);
             this.Controls.Add(this.zakladki);
             this.Controls.Add(this.dodaj_karte);
@@ -315,6 +338,8 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button usun_karte;
+        private System.Windows.Forms.Button ulub;
+        private System.Windows.Forms.TextBox nazwa_ulub;
     }
 }
 
