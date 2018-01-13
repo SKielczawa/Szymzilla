@@ -1,20 +1,21 @@
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Szymzilla\Szymzilla\bin\Debug\Szymzilla.exe.config
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Szymzilla\Szymzilla\bin\Debug\Szymzilla.exe
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Szymzilla\Szymzilla\bin\Debug\Szymzilla.pdb
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Szymzilla\Szymzilla\obj\Debug\Szymzilla.csprojResolveAssemblyReference.cache
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Szymzilla\Szymzilla\obj\Debug\Szymzilla.Form1.resources
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Szymzilla\Szymzilla\obj\Debug\Szymzilla.Properties.Resources.resources
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Szymzilla\Szymzilla\obj\Debug\Szymzilla.csproj.GenerateResource.Cache
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Szymzilla\Szymzilla\obj\Debug\Szymzilla.csproj.CoreCompileInputs.cache
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Szymzilla\Szymzilla\obj\Debug\Szymzilla.exe
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Szymzilla\Szymzilla\obj\Debug\Szymzilla.pdb
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Projekt\Szymzilla\bin\Debug\Szymzilla.exe.config
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Projekt\Szymzilla\bin\Debug\Szymzilla.exe
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Projekt\Szymzilla\bin\Debug\Szymzilla.pdb
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Projekt\Szymzilla\obj\Debug\Szymzilla.csprojResolveAssemblyReference.cache
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Projekt\Szymzilla\obj\Debug\Szymzilla.Form1.resources
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Projekt\Szymzilla\obj\Debug\Szymzilla.Properties.Resources.resources
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Projekt\Szymzilla\obj\Debug\Szymzilla.csproj.GenerateResource.Cache
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Projekt\Szymzilla\obj\Debug\Szymzilla.csproj.CoreCompileInputs.cache
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Projekt\Szymzilla\obj\Debug\Szymzilla.exe
-D:\Szymon\Politechnika\Inżynierskie\III Semestr\Programowanie aplikacyjne\Projekt\Szymzilla\obj\Debug\Szymzilla.pdb
+C:\Users\Krystian\Downloads\Projekt\Szymzilla\bin\Debug\ulub.xml
+C:\Users\Krystian\Downloads\Projekt\Szymzilla\bin\Debug\Szymzilla.exe.config
+C:\Users\Krystian\Downloads\Projekt\Szymzilla\bin\Debug\Szymzilla.exe
+C:\Users\Krystian\Downloads\Projekt\Szymzilla\bin\Debug\Szymzilla.pdb
+C:\Users\Krystian\Downloads\Projekt\Szymzilla\obj\Debug\Szymzilla.csprojResolveAssemblyReference.cache
+C:\Users\Krystian\Downloads\Projekt\Szymzilla\obj\Debug\Szymzilla.Form1.resources
+C:\Users\Krystian\Downloads\Projekt\Szymzilla\obj\Debug\Szymzilla.Properties.Resources.resources
+C:\Users\Krystian\Downloads\Projekt\Szymzilla\obj\Debug\Szymzilla.csproj.GenerateResource.Cache
+C:\Users\Krystian\Downloads\Projekt\Szymzilla\obj\Debug\Szymzilla.exe
+C:\Users\Krystian\Downloads\Projekt\Szymzilla\obj\Debug\Szymzilla.pdb
+D:\Szymon\Politechnika\Inżynierskie\III Semestr\Szymzilla (2)\Projekt\Szymzilla\bin\Debug\ulub.xml
+D:\Szymon\Politechnika\Inżynierskie\III Semestr\Szymzilla (2)\Projekt\Szymzilla\bin\Debug\Szymzilla.exe.config
+D:\Szymon\Politechnika\Inżynierskie\III Semestr\Szymzilla (2)\Projekt\Szymzilla\bin\Debug\Szymzilla.exe
+D:\Szymon\Politechnika\Inżynierskie\III Semestr\Szymzilla (2)\Projekt\Szymzilla\bin\Debug\Szymzilla.pdb
+D:\Szymon\Politechnika\Inżynierskie\III Semestr\Szymzilla (2)\Projekt\Szymzilla\obj\Debug\Szymzilla.csprojResolveAssemblyReference.cache
+D:\Szymon\Politechnika\Inżynierskie\III Semestr\Szymzilla (2)\Projekt\Szymzilla\obj\Debug\Szymzilla.Form1.resources
+D:\Szymon\Politechnika\Inżynierskie\III Semestr\Szymzilla (2)\Projekt\Szymzilla\obj\Debug\Szymzilla.Properties.Resources.resources
+D:\Szymon\Politechnika\Inżynierskie\III Semestr\Szymzilla (2)\Projekt\Szymzilla\obj\Debug\Szymzilla.csproj.GenerateResource.Cache
+D:\Szymon\Politechnika\Inżynierskie\III Semestr\Szymzilla (2)\Projekt\Szymzilla\obj\Debug\Szymzilla.csproj.CoreCompileInputs.cache
+D:\Szymon\Politechnika\Inżynierskie\III Semestr\Szymzilla (2)\Projekt\Szymzilla\obj\Debug\Szymzilla.exe
+D:\Szymon\Politechnika\Inżynierskie\III Semestr\Szymzilla (2)\Projekt\Szymzilla\obj\Debug\Szymzilla.pdb

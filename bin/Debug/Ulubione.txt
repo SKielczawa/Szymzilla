@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ArrayOfStrona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Strona>
+    <nazwa>allegro</nazwa>
+    <adres>https://allegro.pl/</adres>
+  </Strona>
+</ArrayOfStrona>a>
